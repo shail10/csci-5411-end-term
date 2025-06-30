@@ -1,0 +1,43 @@
+.analytics-wrapper {
+  padding: 2rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.analytics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.chart-card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px; /* Base width for pie chart */
+}
+
+.chart-card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  color: #222;
+  text-align: center;
+}
+
+/* Specific class for line chart to stretch horizontally */
+.chart-card.line-chart {
+  max-width: 600px; /* Wider than pie chart */
+}
+
+/* Ensure canvas size consistency */
+.chart-card canvas {
+  width: 100% !important;
+  height: 300px !important;
+}
